@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+  
+  <form id= "survey"  action= "  " method= "post" oninput="result.value=parseInt(rangeBox.value)">
+  <fieldset >
+     <legend> Review</legend>
+      <label for= "fname"> Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Optional" maxlength="20" optional> <br><br>
+      
+      <label for= "visit">When did you visit?</label>
+      <input type="date" id="visit" name="visit"> <br><br>
+      <label for="rangeBox">Rate the overall service &nbsp; <output name="result" for="rangeBox"></output> <br/> (0=poor; 10=great ) </label>
+      0
+      
+      <input name="serviceRate" id="rangeBox" type="range"
+      
+             value="5" step="1" min="0" max="10" />
+                  
+      10
+      <br>
+      
+      
+      <br><br>
+      <label for="serviceType"> Service Type</label>
+      <Select name="ServiceType" id="service">
+      <optgroup label ="Rooms" >
+      <option value="Sta">Standard Room</option>
+      <option value="twi">Twin Room</option>
+      <option value="sui">Suite Room</option>
+      <option value="fam">Family Room</option>
+      <option value="pre">Presedential Suite</option></optgroup>
+      <optgroup label ="Gym/Sport">
+      <option value="Bask">Basket Ball</option>
+      <option value="ten">Ground Tennis</option>
+      <option value="voll">Volley Ball</option>
+      <option value="tab">Table Tennis</option>
+      <option value="gymn" selected >Gymnasium</option></optgroup>
+
+      </select><br><br>
+      <label> How expensive is this hotel?</label>
+      <input name="$Friend" id="fYes" value="Budget" type="radio">
+     <label for="fYes">Budget</label>
+     <input name="$Friend" id="fNo" value="Mid-range" type="radio">
+      <label for="fNo"> Mid-range</label>
+      <input name="$Friend" id="fwhat" value="Expensive" type="radio">
+      <label for="fwhat">Expensive</label><br><br>
+      <label for="commBox"></label>
+      <textarea name="custExp" id="commBox" placeholder="Tell people about your experience:your room, service, amenities?" maxlength="500"></textarea><br><br>
+      <label for="myfile">Do you have photos/Videos...to share?</label>
+      <input type="file" id="myfile" name="myfile" multiple><br><br>  
+      <input name="final" id="finalcb" value="yes" type="checkbox" />
+      <label for="finalcb"><em>I certify that this review is based on my own experience and is my genuine opinion of this hotel, and<br> that I have no personal or business relationship with this establishment, and have not been offered<br> any incentive or payment originating from the establishment to write this review.</em></label><br><br>
+
+  
+  
+  
+  <input type= "submit" value="Submit">
+  <input  type="reset" value="Reset">
+  </fieldset>
+  </form>
+  </body>
+  </html>
